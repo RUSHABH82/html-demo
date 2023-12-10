@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Level-5</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#content1-ordered-list">ordered-list</a><br>
+        <a href="#content2-unordered-list">unordered-list</a><br>
+        <a href="#tables">tables</a><br>
+        <a href="#forms">Forms</a><br>
+        <a href="#iframes">iframes</a><br>
+    </nav>
+</header>
+<hr>
+<main>
+    <section id="content1-ordered-list">
+        <div style="font-size: large">1. Ordered List-tag</div>
+        <ol>
+            <li>Java</li>
+            <ol type="i">
+                <li>Inheritance</li>
+                <li>Exception</li>
+                <li>Thread</li>
+            </ol>
+            <li>Python</li>
+            <li>Html</li>
+            <li>css</li>
+            <li>Js</li>
+        </ol>
+    </section>
+
+    <section id="content2-unordered-list">
+        <div style="font-size: large">2. Unordered List-tag</div>
+        <ul>
+            <li>Java</li>
+            <ul>
+                <li>Inheritance</li>
+                <li>Exception</li>
+                <li>Thread</li>
+            </ul>
+            <li>Python</li>
+            <li>Html</li>
+            <li>css</li>
+            <li>Js</li>
+        </ul>
+    </section>
+
+    <div id="tables">
+        <div style="font-size: large">3. table-tag</div>
+        <table border="1">
+            <caption>Student info</caption>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Rushabh</td>
+                <td>25</td>
+                <td>mk69@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Abc</td>
+                <td>23</td>
+                <td>4bc@gmail.com</td>
+            </tr>
+            <tr>
+                <td colspan="3">No data available</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+
+    <div id="forms">
+        <div style="font-size: large">4. Forms-tag</div>
+        <form action="/" method="post">
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" name="name" value="predefinedData" placeholder="Enter name" required/>
+            <br>
+
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required/>
+            <br>
+
+            <label for="dob">Enter date of birth:</label>
+            <input type="date" id="dob" name="dob" placeholder="Enter Date of birth" required/>
+            <br>
+
+            <label for="file">Upload file:</label>
+            <input type="file" id="file" name="file" placeholder="Upload file" required/>
+            <br>
+
+            <label for="color">Select color:</label>
+            <input type="color" id="color" name="color" placeholder="Select color" required/>
+            <br>
+
+            <label for="price_range">price rance:</label>
+            <input type="range" id="price_range" name="price_range" placeholder="Select range" max="5" min="0"
+                   value="2" required/>
+            <br>
+
+            <label for="pocked_me">pocked_me:</label>
+            <input type="button" id="pocked_me" name="pocked_me" value="pocked_me" required/>
+            <br>
+
+            <span> Select Gender:</span>
+            <span>
+                    <label for="male">male</label>
+                    <input type="radio" id="male" name="gender" value="male"/>
+                    <label for="female">female</label>
+                    <input type="radio" id="female" name="gender" value="female"/>
+                    <label for="other">other</label>
+                    <input type="radio" id="other" name="gender" value="other"/>
+            </span>
+            <br>
+
+            <div>
+                <span> Select Programing language:</span>
+                <label for="java">java</label>
+                <input type="checkbox" id="java" name="programingLanguage" value="java"/>
+                <label for="python">python</label>
+                <input type="checkbox" id="python" name="programingLanguage" value="python"/>
+                <label for="javaScript">javaScript</label>
+                <input type="checkbox" id="javaScript" name="programingLanguage" value="javaScript"/>
+            </div>
+
+            <div>
+                <label for="country">Select country:</label>
+                <select name="country" id="country">
+                    <option value="INDIA">INDIA</option>
+                    <option value="US">US</option>
+                    <option value="UK">UK</option>
+                    <option value="OTHERS">OTHERS</option>
+                </select>
+                <br>
+            </div>
+
+            <label for="description"> Enter Description </label>
+            <textarea id="description" name="description" rows="4" cols="10"> </textarea>
+
+            <input type="submit"/>
+        </form>
+    </div>
+
+    <div id="iframes">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-56dVunLPAc?si=yVZ2Xqk2Af68qiaQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/Hibiscus_moscheutos"></iframe>
+
+    </div>
+
+</main>
+<footer>
+</footer>
+
+</body>
+</html>
